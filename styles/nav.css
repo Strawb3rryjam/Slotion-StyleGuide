@@ -1,0 +1,40 @@
+
+
+*{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+img{
+    display: flex;
+    width: 355.19px;
+    padding: 17.456px 21.67px 20.89px 20.73px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 21.36px;
+}
+
+
+.nav_pages{
+justify-content: center;
+align-items: center;
+gap: 62px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row ;
+    background-color:#364B3B;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+  
