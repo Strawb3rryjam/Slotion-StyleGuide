@@ -49,16 +49,17 @@
     padding: 0;
     box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
 }
-
 body {
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;  /* Default font */
-    background-color: #F5F3EF;  /* Set background color */
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full height of the viewport */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Poppins, sans-serif;
+    background-color: #F5F3EF;
+    width: 100vw;
+    min-height: 100vh;  /* Ensures the body takes at least full viewport height */
+    overflow-x: hidden;
+    padding-bottom: 20px; /* Added bottom padding */
 }
+
 
 
 .top-logo {
@@ -200,28 +201,30 @@ hr {
 /* Box 1: Adjusts layout for iPhone on the right */
 .box-1 {
     display: flex;
-    justify-content: space-between; /* Creates space between text and image */
+    justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers items vertically */
     width: 100%;
     max-width: 1440px; /* Adjust based on layout */
     margin: 0 auto; /* Centers the entire box */
-    padding: 50px; /* Add spacing */
+    padding: 30px; /* Reduced padding to bring content closer */
+    gap: 20px; /* Smaller gap between text and image */
 }
 
 .baby-box-1 {
     background-color: white;
     border-radius: 10px;
-    padding:10px;
+    padding: 20px; /* Added some padding for better spacing inside the box */
     display: flex;
     flex-direction: column; /* Stack content vertically */
-    align-items: flex-start; /* Align text and icons to the left */
-    max-width: 50%; /* Restrict width so image has space */
+    align-items: center; /* Centers text and icons horizontally */
+    width: 522px; /* Restrict width so image has space */
+    height: 366px;
 }
 
 .icon-container {
     display: flex;
-    gap: 20px; /* Space between icons */
-    margin-bottom: 20px; /* Adds space between icons and heading */
+    gap: 10px; /* Reduced space between icons */
+    margin-bottom: 10px; /* Smaller space between icons and heading */
 }
 
 /* Ensure the right iPhone image matches size */
@@ -234,16 +237,19 @@ hr {
 /* Box 2: Adjusts layout for iPhone on the left */
 .box-2 {
     display: flex;
-    justify-content: space-between; /* Ensures space between text and image */
-    align-items: center;
-    padding: 20px;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 30px; /* Adjust padding to bring content closer */
+    gap: 20px; /* Smaller gap between text and image */
 }
 
 .baby-box-2 {
     background-color: white;
     border-radius: 10px;
-    padding:10px;
-    width: 50%;  /* Adjust the width to fit your layout */
+    padding: 20px; /* Padding for better spacing */
+    width: 522px;  /* Adjust the width to fit your layout */
+    height: 366px;
+    border-radius: 20px;
 }
 
 .icon-container img {
