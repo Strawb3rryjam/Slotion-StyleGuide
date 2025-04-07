@@ -45,6 +45,7 @@
 
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -53,21 +54,39 @@
 
 
 body {
-    width: 1440px;  /* Set the width of the body to 1440px */
-    height: 2000px; /* Set the height of the body to 2664px */
-    margin: 0 auto; /* Centers the body horizontally */
-    background-color: #F5F3EF; /* Set background color */
-    font-family: Poppins, sans-serif; /* Default font */
-    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;  /* Default font */
+    background-color: #F5F3EF;  /* Set background color */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+
+
+.logo-title{
+    padding:100px;
+    padding-left:100px;
+    padding-right: 100px;
+}
+
+
+.logo-title hr{
+    width: 100%; /* Takes full width of the container */
+    border: 7px solid #000; /* You can adjust the color and thickness */
+    margin-top: 20px; /* Adjust margin as needed */
+}
 
 
 .logo_Body{
-        margin-left: 108px;
-        margin-right: 108px;
-        margin-top: 92px;
+     padding-left: 200px;
+     padding-right: 200px;
+
 }
+
+
+
 
 
 h1{
@@ -76,6 +95,7 @@ h1{
     font-style: normal;
     font-weight: 700;
     line-height: 134px; /* 139.583% */ 
+    padding-bottom: 40px;
 }
 
 .hr_Heading{
@@ -106,12 +126,12 @@ p{
     justify-content: center;     /* Centers content vertically */
     text-align: center;          /* Ensures the text is centered inside the <p> */
     width: 100%;                 /* Make sure it takes full width */
-    padding: 20px;               /* Optional: Add some spacing around the container */
+    padding: 100px;               /* Optional: Add some spacing around the container */
 }
 
 .logo_Rationale img {
-    max-width: 100%;  /* Make sure the image does not overflow */
-    height: auto;     /* Maintain aspect ratio */
+    width: 831.41px;  /* Make sure the image does not overflow */
+    height: 305.46px;     /* Maintain aspect ratio */
     margin-bottom: 20px; /* Optional: Adds spacing between image and text */
 }
 
@@ -135,18 +155,20 @@ p{
     align-items: flex-start;         /* Aligns items to the top */
     justify-content: space-between;  /* Space out the content */
     width: 100%;                     /* Full width of the container */
-    padding: 20px;                   /* Optional: Adds spacing */
+    padding-bottom: 200px;  
+    gap:73px;                 /* Optional: Adds spacing */
 }
 
 .shape-container div {
+    width:517px;
+    height:272px;
     flex: 1;                         /* Takes up the available space on the left */
     max-width: 60%;                  /* Optional: Limits the width of the text container */
 }
 
 .shape-container img {
-    max-width: 400px;                /* Optional: Limits the image size */
-    width: 100%;                     /* Makes sure the image is responsive */
-    height: auto;                    /* Maintain aspect ratio */
+    width: 459px;                     /* Makes sure the image is responsive */
+    height: 403.62px;                    /* Maintain aspect ratio */
     margin-left: 20px;               /* Optional: Adds spacing between text and image */
 }
 
@@ -174,32 +196,37 @@ p {
 
 /* Wrapper around the content */
 .colour-container {
-    display: flex;                    /* Enables Flexbox */
-    align-items: flex-start;          /* Aligns items to the top */
-    justify-content: space-between;   /* Space between the text and image container */
-    width: 100%;                      /* Full width of the container */
-    padding: 20px;                    /* Optional: Adds spacing around the container */
+    display: flex;                   
+    align-items: center;         /* Center items vertically for better alignment */
+    justify-content: flex-start; /* Align items towards the left to reduce space */
+    gap: 20%;                   /* Adjusts the space between text and images */
+    width: 100%;                 
+    padding-bottom: 200px;        /* Reduce padding to bring elements closer */
 }
 
 /* Text section on the left */
-.colour-container div:first-child {
-    flex: 1;                          /* Takes up available space on the left */
-    max-width: 60%;                   /* Optional: Limits the width of the text container */
+.colour-container div {
+    width: 522px;
+    height: auto;  /* Let it adjust naturally */
 }
 
 /* Image container on the right */
 .colour-images {
-    display: flex;                    /* Enables Flexbox for the images */
-    gap: 60px;                        /* Adds a 60px space between the images */
-    margin-left: 128px;                /* Adds space of 128px between the text and image container */
+    display: flex;
+    gap: 40px; /* Reduce the spacing between images */
 }
 
 /* Image styles */
 .colour-images img {
-    max-width: 100%;                   /* Ensures the images are responsive */
-    height: auto;                      /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
+
+.variations-container{
+    margin-bottom:200px;
+
+}
 
 
 .variations_img {
