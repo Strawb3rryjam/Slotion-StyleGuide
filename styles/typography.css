@@ -1,30 +1,28 @@
- 
 /* Navbar styling */
 .navbar {
     display: flex;
-    justify-content: flex-start;  /* Aligns items at the start of the navbar */
+    justify-content: flex-start;
     align-items: center;
     background: #364B3B;
     padding: 10px 20px;
-    width: 100%;  /* Full width of the viewport */
+    width: 100%;
     height: 96px;
-    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
 }
 
 .navbar .logo {
-    width: 312px;  /* Adjust based on logo size */
+    width: 312px;
     height: 80px;
 }
-
 
 /* Navigation links */
 .nav_pages {
     display: flex;
-    justify-content: flex-end;  /* Distribute nav items evenly */
-    gap: 64px;  /* Remove any default gap */
-    width: 100%;  /* Make the nav pages container take full width */
-    padding-left: 143px;  /*  Adds a gap of 143px from the left */
-    padding-right:45px;
+    justify-content: flex-end;
+    gap: 64px;
+    width: 100%;
+    padding-left: 143px;
+    padding-right: 45px;
 }
 
 .nav_pages a {
@@ -32,35 +30,60 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
-    transition: color 0.3s ease, font-weight 0.3s ease; /* Added transition for smooth effect */
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-/* Bold on hover */
 .nav_pages a:hover {
     font-weight: bold;
 }
 
-/*----------------*/
-
-
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
+    box-sizing: border-box;
 }
-
 
 body {
-    width: 1440px;  /* Set the width of the body to 1440px */
-    height: 2000px; /* Set the height of the body to 2664px */
-    margin: 0 auto; /* Centers the body horizontally */
-    background-color: #F5F3EF; /* Set background color */
-    font-family: Poppins, sans-serif; /* Default font */
-    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
+    font-family: Poppins, sans-serif;
+    background-color: #F5F3EF;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
+.typography-title {
+    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
+.typography-title hr {
+    width: 100%;
+    border: 7px solid #000;
+    margin-top: 20px;
+}
+
+.typography_Body {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 108px;
+    margin-right: 108px;
+    margin-top: 92px;
+}
+
+h1 {
+    font-family: Outfit;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134px;
+    padding-bottom: 40px;
+}
+
+.hr_Heading {
+    margin-top: 28px;
+    border-top: 7px solid black;
+}
 
 hr {
     border-top: 7px solid black;
@@ -70,47 +93,39 @@ hr {
     border-top: 1px solid black;
 }
 
-h1 {
-    font-family: Outfit;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 134px; /* 139.583% */
+
+desc{
+    width:414px;
+    height:222px;
 }
 
-.typography_Body {
-    margin-left: 108px;
-    margin-right: 108px;
-    margin-top: 92px;
-}
-
-.poppins_Desc {
+/* Typography Section */
+.poppins_Desc, .outfit_Desc {
     display: block;
+    margin: 92px auto;
     border: 2px solid #000;
-    margin-top: 92px;
-    margin-bottom: 92px;
-    width: 100%;  /* Full width */
-    max-width: 500px;  /* Limit the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: calc(100% - 400px);
+    max-width: 100%;
+    height: auto;
+    margin-left:50px;
 }
 
-.outfit_Desc {
+.poppins_Desc2 {
     display: block;
+    margin: 92px auto;
     border: 2px solid #000;
-    margin-top: 92px;
-    margin-bottom: 92px;
-    width: 100%;  /* Full width */
-    max-width: 500px;  /* Limit the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    width: 70%;  /* Adjusted size */
+    max-width: 600px;
+    height: auto;
 }
 
 h2 {
     color: #000;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 64px; /* Increased for better visibility */
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 58.333% */
+    line-height: 80px;
     margin-bottom: 28px;
 }
 
@@ -118,34 +133,26 @@ p {
     color: #000;
     text-align: justify;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 24px; /* Slightly larger */
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 140% */
+    line-height: 36px;
     letter-spacing: -0.6px;
 }
 
-/* Flex container for the large title and description */
+/* Layout adjustments for better centering */
 .container {
     display: flex;
-    justify-content: space-between;  /* Ensures space between title and description */
-    align-items: flex-start;  /* Aligns items to the top */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-}
-.large_Title {
-    color: #000;
-    font-family: Outfit;
-    font-size: 63px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 74px; /* 117.46% */
-    margin-bottom: 275px; /* Adds 275px gap below the large title */
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.desc {
-    display: flex;
-    flex-direction: column;  /* Stack h2 and p vertically */
-    justify-content: flex-start;  /* Align items at the top */
-    width: 50%;  /* Make description take the other 50% of the width */
-    margin-left: 20px;  /* Space between title and description */
+.large_Title {
+    font-size: 96px;
+    line-height: 110px;
+    width: 100%;
+    text-align: left;
 }
