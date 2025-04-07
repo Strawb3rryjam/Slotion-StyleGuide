@@ -207,25 +207,35 @@ p{
     height: auto;
 }
 
-
+/* Container for all items */
 .accessibility-container {
     display: flex;
-    flex-direction: column; /* Stacks each section */
+    flex-direction: column; /* Stacks each section vertically */
     gap: 40px; /* Adds spacing between sections */
+    align-items: center; /* Centers all items horizontally in the container */
 }
 
+/* Each item (image + text) */
 .accessibility-item {
     display: flex;
     align-items: center; /* Aligns image and text vertically */
+    justify-content: center; /* Centers the image and text horizontally in the item */
     gap: 32px; /* Space between image and text */
 }
 
+/* Styling the image */
 .accessibility-item img {
     width: 629.181px; /* Sets image width */
     height: 476px; /* Sets image height */
+    object-fit: cover; /* Ensures the image covers its container, maintaining aspect ratio */
 }
 
+/* Text section (stacking text vertically) */
 .accessibility-text {
     display: flex;
-    flex-direction: column; /* Stacks h4 and p */
+    flex-direction: column; /* Stacks h4 and p vertically */
+    text-align: start; /* Aligns text to the start (left) */
+    width: 413px;
+    height: auto; /* Removes fixed height to allow text to adjust */
+    justify-content: center; /* Centers text vertically within the accessibility-text section */
 }
