@@ -1,0 +1,43 @@
+ 
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: flex-start;  /* Aligns items at the start of the navbar */
+    align-items: center;
+    background: #364B3B;
+    padding: 10px 20px;
+    width: 100%;  /* Full width of the viewport */
+    height: 96px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+.navbar .logo {
+    width: 312px;  /* Adjust based on logo size */
+    height: 80px;
+}
+
+
+/* Navigation links */
+.nav_pages {
+    display: flex;
+    justify-content: flex-end;  /* Distribute nav items evenly */
+    gap: 64px;  /* Remove any default gap */
+    width: 100%;  /* Make the nav pages container take full width */
+    padding-left: 143px;  /*  Adds a gap of 143px from the left */
+    padding-right:45px;
+}
+
+.nav_pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Added transition for smooth effect */
+}
+
+/* Bold on hover */
+.nav_pages a:hover {
+    font-weight: bold;
+}
+
+/*----------------*/

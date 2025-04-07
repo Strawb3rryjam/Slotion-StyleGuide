@@ -118,7 +118,7 @@ p{
 .navbar-container {
     display: flex;
     width: 1440px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 44px 163px;
@@ -136,14 +136,25 @@ p{
     justify-content: center;
 }
 
+
+
+.icon-buttons-section{
+    justify-content: space-between;
+
+}
+
+.icon-section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
 .icons-List {
     display: flex;
-    flex-direction: column; /* Stacks title and icons */
-    align-items: center; /* Centers everything horizontally */
-    justify-content: center; /* Centers everything vertically */
-    width: 100%; /* Ensures full width */
-    height:39px; /* Centers content in the full viewport */
-    text-align: center;
+    width: 1440px;
+    padding: 0px 200px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icons-List h3 {
@@ -168,12 +179,18 @@ p{
 }
 
 
+.icon-Buttons-Group{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
 /* Center the section */
 .icon-Buttons-Group {
     display: flex;
     justify-content: center; /* Centers the columns */
     align-items: flex-start; /* Aligns items at the top */
-    gap: 40px; /* Space between columns */
+    gap: 750px; /* Space between columns */
     width: 100%;
     max-width: 800px; /* Adjust width as needed */
     margin: 0 auto; /* Centering */
@@ -186,6 +203,29 @@ p{
     flex-direction: column;
     gap: 16px; /* Space between each button */
 }
+
+/* For each image-text pair */
+.icon-button-pair {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically aligns the image and text */
+    gap: 10px; /* Space between the image and text */
+}
+
+/* For the images */
+.icon-button-pair img {
+    width: auto; /* Set your preferred width */
+    height: 28px; /* Keep the image aspect ratio */
+}
+
+/* For the text */
+.icon-button-pair div {
+    font-size: 16px; /* Text size */
+    font-weight: 500; /* Text weight */
+}
+
+
+
+
 
 /* Center the sign-up section */
 .sign-up {

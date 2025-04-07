@@ -1,26 +1,107 @@
+ 
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: flex-start;  /* Aligns items at the start of the navbar */
+    align-items: center;
+    background: #364B3B;
+    padding: 10px 20px;
+    width: 100%;  /* Full width of the viewport */
+    height: 96px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+.navbar .logo {
+    width: 312px;  /* Adjust based on logo size */
+    height: 80px;
+}
+
+
+/* Navigation links */
+.nav_pages {
+    display: flex;
+    justify-content: flex-end;  /* Distribute nav items evenly */
+    gap: 64px;  /* Remove any default gap */
+    width: 100%;  /* Make the nav pages container take full width */
+    padding-left: 143px;  /*  Adds a gap of 143px from the left */
+    padding-right:45px;
+}
+
+.nav_pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Added transition for smooth effect */
+}
+
+/* Bold on hover */
+.nav_pages a:hover {
+    font-weight: bold;
+}
+
+/*----------------*/
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
 }
 
+.colour-styles-body{
+    padding-left: 200px;
+    padding-right: 200px;
 
-body {
-    width: 1440px;  /* Set the width of the body to 1440px */
-    height: 2000px; /* Set the height of the body to 2664px */
-    margin: 0 auto; /* Centers the body horizontally */
-    background-color: #F5F3EF; /* Set background color */
-    font-family: Poppins, sans-serif; /* Default font */
-    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
 }
 
-h1{
+
+.colour-title{
+    padding:100px;
+}
+
+.colours-container{
+    padding:100px
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;  /* Default font */
+    background-color: #F5F3EF;  /* Set background color */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+.colour-title{
+    padding-left:100px;
+    padding-right: 100px;
+}
+
+
+/* Style for the h1 header */
+h1 {
     font-family: Outfit;
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
-    line-height: 134px; /* 139.583% */
+    line-height: 134px; 
+    padding-bottom: 82.5px;
 }
+
+/* Style for the hr (horizontal rule) */
+.hr_Header {
+    width: 100%; /* Makes the hr take the full width of the parent */
+    height: 8px; /* Adjusts the height to match the font size of the h1 */
+    background-color: black; /* Color of the hr */
+    border: none; /* Removes the default border style of the hr */
+    margin-top: 0; /* Ensures no extra space above the hr */
+    margin-bottom: 0; /* Ensures no extra space below the hr */
+}
+
 
 h2{
     font-family: Outfit;
@@ -39,9 +120,12 @@ h4{
 }
 
 
-.hr_Header{
-    border-top: 7px solid black;
+.colour-title hr{
+    width: 100%; /* Takes full width of the container */
+    border: 7px solid #000; /* You can adjust the color and thickness */
+    margin-top: 20px; /* Adjust margin as needed */
 }
+
 
 p{
     text-align: center;
@@ -51,6 +135,9 @@ p{
     line-height: 24px; /* 120% */
     letter-spacing: -0.4px;
 }
+
+
+
 
 .colours {
     display: flex;
@@ -92,6 +179,7 @@ p{
     gap: 23px; /* Adjust spacing between images */
     width: 100%;
     margin: 0 auto; /* Centers the whole div */
+    padding: 100px;
 }
 
 .colours-example img {
@@ -109,6 +197,8 @@ p{
     gap: 23px; /* Adds spacing between images */
     width: 100%;
     margin: 0 auto; /* Ensures the section is centered */
+    padding-top:200px;
+    padding-bottom:200px;
 }
 
 .colour-warnings img {
