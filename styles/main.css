@@ -1,93 +1,155 @@
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: flex-start;  /* Aligns items at the start of the navbar */
+    align-items: center;
+    background: #364B3B;
+    padding: 10px 20px;
+    width: 100%;  /* Full width of the viewport */
+    height: 96px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+.navbar .logo {
+    width: 312px;  /* Adjust based on logo size */
+    height: 80px;
+}
+
+
+/* Navigation links */
+.nav_pages {
+    display: flex;
+    justify-content: flex-end;  /* Distribute nav items evenly */
+    gap: 64px;  /* Remove any default gap */
+    width: 100%;  /* Make the nav pages container take full width */
+    padding-left: 143px;  /*  Adds a gap of 143px from the left */
+    padding-right:45px;
+}
+
+.nav_pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Added transition for smooth effect */
+}
+
+/* Bold on hover */
+.nav_pages a:hover {
+    font-weight: bold;
+}
+
+/*----------------*/
+
+
+
+/* Reset some global styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
 }
 
-
 body {
-    width: 1440px;  /* Set the width of the body to 1440px */
-    height: 2000px; /* Set the height of the body to 2664px */
-    margin: 0 auto; /* Centers the body horizontally */
-    background-color: #F5F3EF; /* Set background color */
-    font-family: Poppins, sans-serif; /* Default font */
-    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;  /* Default font */
+    background-color: #F5F3EF;  /* Set background color */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+
+
+
+
+
+/* Mockup Image styling */
 .mockup_img {
-    width: 1440px;
+    width: 100vw;  /* Full width of the viewport */
     height: auto;
     display: block;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    margin: 0;  /* Remove margin around the image */
 }
 
+/* Main Section */
+.main-section {
+    padding-left: 183px;  /* Left gap of 183px */
+    padding-right: 183px; /* Right gap of 183px */
+    width: calc(100% - 366px);  /* Subtract total gap (183px * 2) from 100% */
+    margin-top: 96px;  /* Space for navbar */
+    overflow-x: hidden; /* Prevent any overflow from affecting layout */
+}
+
+/* Section styling */
 section {
     position: relative;
     z-index: 2;
     padding: 20px;
-    width: 100%;
+    width: 100%;  /* Full width of the parent container */
 }
 
-
+/* Section header styling */
 .section_Header {
     text-align: center;
     font-family: Outfit;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
     line-height: 134px;
 }
 
-h2{
+/* Section description */
+.section_Header_Desc {
+    text-align: center;
+    height: 84px;
+    width: 100%;  /* Full width */
+}
+
+/* Typography */
+h2, h3 {
     font-family: Outfit;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 134px; /* 209.375% */
 }
 
-h3{
+h3 {
     font-family: Poppins;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 38px; /* 118.75% */
+    line-height: 38px;
 }
 
-p{
-/* Body Text */
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 140% */
+p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
 }
 
-
-hr{
+/* HR styling */
+hr {
     border-top: 3px solid black;
 }
 
-
+/* Team Section Styling */
 .team-section {
     text-align: center;
 }
 
-/* This ensures the team container aligns the divs side by side */
 .team-container {
     display: flex;
-    justify-content: space-between; /* Space out team members evenly */
-    gap: 40px; /* Adds space between each team member */
-    flex-wrap: wrap; /* Allows wrapping to next line on smaller screens */
-    margin: 0 auto; /* Centers the whole section */
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;  /* Ensure team container takes full width */
 }
 
-/* Team div styling */
 .team {
-    flex: 1 1 300px; /* Allows each team div to take equal space and wrap on smaller screens */
-    max-width: 300px; /* Limits the width of each team div */
+    flex: 1 1 300px;  /* Allows each team div to take equal space */
+    max-width: 300px;
     text-align: center;
 }
 
@@ -95,34 +157,23 @@ hr{
 .pfp {
     width: 380px;
     height: 380px;
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    object-fit: cover;
 }
 
 /* Tag image styling */
-/* Center the tag image */
 .tag {
-    display: block; /* Makes the image a block element so we can center it */
-    margin: 0 auto; /* Centers it horizontally */
-    width: auto; /* Keeps the original width */
-    max-width: 100%; /* Ensures it doesn't stretch beyond its container */
-    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
-
 
 /* Description container styling */
-.desc { 
+.desc {
     width: 390px;
     display: flex;
-    flex-direction: column; /* Stack the text elements vertically */
-    gap: 20px; /* Adds space between stacked text elements */
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
 }
-
-h3 {
-    font-family: Poppins;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 38px;
-}
-
