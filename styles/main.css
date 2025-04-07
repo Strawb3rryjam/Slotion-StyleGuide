@@ -43,7 +43,6 @@
 /*----------------*/
 
 
-
 /* Reset some global styles */
 * {
     margin: 0;
@@ -62,25 +61,41 @@ body {
 }
 
 
+.top-logo {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+}
 
 
 
+/* Ensure the container takes the full width */
+.mockup-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (if needed) */
+    width: 100vw; /* Full width of the viewport */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    overflow: hidden; /* Prevents overflow issues */
+}
 
 /* Mockup Image styling */
 .mockup_img {
-    width: 100vw;  /* Full width of the viewport */
-    height: auto;
+    width: 100%;  /* Makes the image take full width */
+    max-width: 100%;  /* Limits the max width to 1440px */
+    height: auto;  /* Maintains aspect ratio */
     display: block;
-    margin: 0;  /* Remove margin around the image */
 }
+
+
+
 
 /* Main Section */
 .main-section {
-    padding-left: 183px;  /* Left gap of 183px */
-    padding-right: 183px; /* Right gap of 183px */
-    width: calc(100% - 366px);  /* Subtract total gap (183px * 2) from 100% */
-    margin-top: 96px;  /* Space for navbar */
-    overflow-x: hidden; /* Prevent any overflow from affecting layout */
+    padding-left:200px;
+    padding-right:200px;
+
 }
 
 /* Section styling */
@@ -169,6 +184,11 @@ hr {
     height: auto;
 }
 
+
+.app_Desc{
+    padding-top: 100px;
+}
+
 /* Description container styling */
 .desc {
     width: 390px;
@@ -177,3 +197,81 @@ hr {
     gap: 20px;
     text-align: center;
 }
+/* Box 1: Adjusts layout for iPhone on the right */
+.box-1 {
+    display: flex;
+    justify-content: space-between; /* Creates space between text and image */
+    align-items: center; /* Centers items vertically */
+    width: 100%;
+    max-width: 1440px; /* Adjust based on layout */
+    margin: 0 auto; /* Centers the entire box */
+    padding: 50px; /* Add spacing */
+}
+
+.baby-box-1 {
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align text and icons to the left */
+    max-width: 50%; /* Restrict width so image has space */
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px; /* Adds space between icons and heading */
+}
+
+/* Ensure the right iPhone image matches size */
+.photo-right {
+    width: 100%;   /* Ensures image takes full width of its container */
+    max-width: 500px; /* Controls the max size */
+    height: auto;   /* Maintains the aspect ratio */
+}
+
+/* Box 2: Adjusts layout for iPhone on the left */
+.box-2 {
+    display: flex;
+    justify-content: space-between; /* Ensures space between text and image */
+    align-items: center;
+    padding: 20px;
+}
+
+.baby-box-2 {
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    width: 50%;  /* Adjust the width to fit your layout */
+}
+
+.icon-container img {
+    margin-right: 10px; /* Adds some space between the icons */
+}
+
+/* Ensure the left iPhone image matches size */
+.photo-left {
+    width: 100%;   /* Ensures image takes full width of its container */
+    max-width: 500px; /* Controls the max size */
+    height: auto;   /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the image fits within container without stretching */
+    order: -1; /* Moves the image to the left side */
+}
+
+
+
+.bottom-text-container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;     /* Centers the image vertically (if needed) */
+    width: 100%;             /* Ensures the container takes full width */
+    height: auto;            /* Adjusts height based on content */
+}
+
+.bottom-text {
+    max-width: 100%;         /* Ensures image fits within container */
+    height: auto;            /* Maintain aspect ratio */
+}
+

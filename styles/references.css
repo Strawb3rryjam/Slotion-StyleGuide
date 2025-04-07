@@ -41,3 +41,58 @@
 }
 
 /*----------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;  /* Default font */
+    background-color: #F5F3EF;  /* Set background color */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full height of the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+
+
+h1{
+    font-family: Outfit;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134px; 
+    padding-bottom: 40px;
+}
+
+
+.references-container{
+    padding:  100px;
+}
+
+.references-container hr {
+    width: 100%; /* Takes full width of the container */
+    border: 7px solid #000; /* You can adjust the color and thickness */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+/* Centering the div */
+.link {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column; /* Stack the paragraphs vertically */
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content (if the div has a height) */
+    text-align: center; /* Ensures text is centered inside each paragraph */
+    margin: 0 auto; /* Centers the div itself within its parent container */
+    width: fit-content; /* Makes the div width fit the content */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
