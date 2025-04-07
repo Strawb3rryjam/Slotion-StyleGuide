@@ -1,6 +1,17 @@
 * {
-    color: #000;
-    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
+}
+
+
+body {
+    width: 1440px;  /* Set the width of the body to 1440px */
+    height: 2000px; /* Set the height of the body to 2664px */
+    margin: 0 auto; /* Centers the body horizontally */
+    background-color: #F5F3EF; /* Set background color */
+    font-family: Poppins, sans-serif; /* Default font */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
 }
 
 .mockup_img {
@@ -15,7 +26,6 @@
 section {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     width: 100%;
 }
@@ -28,5 +38,91 @@ section {
     font-style: normal;
     font-weight: 700;
     line-height: 134px;
+}
+
+h2{
+    font-family: Outfit;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134px; /* 209.375% */
+}
+
+h3{
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 118.75% */
+}
+
+p{
+/* Body Text */
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}
+
+
+hr{
+    border-top: 3px solid black;
+}
+
+
+.team-section {
+    text-align: center;
+}
+
+/* This ensures the team container aligns the divs side by side */
+.team-container {
+    display: flex;
+    justify-content: space-between; /* Space out team members evenly */
+    gap: 40px; /* Adds space between each team member */
+    flex-wrap: wrap; /* Allows wrapping to next line on smaller screens */
+    margin: 0 auto; /* Centers the whole section */
+}
+
+/* Team div styling */
+.team {
+    flex: 1 1 300px; /* Allows each team div to take equal space and wrap on smaller screens */
+    max-width: 300px; /* Limits the width of each team div */
+    text-align: center;
+}
+
+/* Profile picture styling */
+.pfp {
+    width: 380px;
+    height: 380px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+/* Tag image styling */
+/* Center the tag image */
+.tag {
+    display: block; /* Makes the image a block element so we can center it */
+    margin: 0 auto; /* Centers it horizontally */
+    width: auto; /* Keeps the original width */
+    max-width: 100%; /* Ensures it doesn't stretch beyond its container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
+/* Description container styling */
+.desc { 
+    width: 390px;
+    display: flex;
+    flex-direction: column; /* Stack the text elements vertically */
+    gap: 20px; /* Adds space between stacked text elements */
+    text-align: center;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
 }
 

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
+}
+
+
+body {
+    width: 1440px;  /* Set the width of the body to 1440px */
+    height: 2000px; /* Set the height of the body to 2664px */
+    margin: 0 auto; /* Centers the body horizontally */
+    background-color: #F5F3EF; /* Set background color */
+    font-family: Poppins, sans-serif; /* Default font */
+    overflow-y: auto; /* Enables vertical scrolling if content exceeds the viewport height */
+}
+
+h1{
+    font-family: Outfit;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 134px; /* 139.583% */
+}
+
+h2{
+    font-family: Outfit;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 134px; /* 209.375% */
+}
+
+
+h4{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px; /* 118.75% */
+}
+
+
+.hr_Header{
+    border-top: 7px solid black;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.4px;
+}
+
+.colours {
+    display: flex;
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images horizontally */
+    gap: 0; /* Removes gaps between images */
+}
+
+.colours img {
+    max-width: 100%; /* Ensures images scale properly */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0; /* Eliminates any unwanted spacing */
+    padding: 0;
+}
+
+.colours-container {
+    display: flex;
+    flex-direction: column; /* Stacks title, images, and text vertically */
+    align-items: center; /* Centers everything */
+    text-align: center; /* Ensures text is centered */
+    width: 1114px;
+    max-width: 100%; /* Makes it responsive */
+    height: auto; /* Adjusts dynamically based on content */
+    margin: 0 auto; /* Centers the whole section */
+    padding: 20px 0; /* Adds some breathing space */
+}
+
+.colours-container p {
+    margin-top: 16px; /* Adds spacing between images and text */
+    max-width: 800px; /* Limits text width for readability */
+}
+
+
+.colours-example {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Aligns them vertically */
+    gap: 23px; /* Adjust spacing between images */
+    width: 100%;
+    margin: 0 auto; /* Centers the whole div */
+}
+
+.colours-example img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.colour-warnings {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Aligns them vertically */
+    gap: 23px; /* Adds spacing between images */
+    width: 100%;
+    margin: 0 auto; /* Ensures the section is centered */
+}
+
+.colour-warnings img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.accessibility-container {
+    display: flex;
+    flex-direction: column; /* Stacks each section */
+    gap: 40px; /* Adds spacing between sections */
+}
+
+.accessibility-item {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+    gap: 32px; /* Space between image and text */
+}
+
+.accessibility-item img {
+    width: 629.181px; /* Sets image width */
+    height: 476px; /* Sets image height */
+}
+
+.accessibility-text {
+    display: flex;
+    flex-direction: column; /* Stacks h4 and p */
+}
