@@ -118,17 +118,6 @@ p{
     line-height: 27.111px; /* 117.46% */
 }
 
-
-.navbar-container {
-    display: flex;
-    width: 1440px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 44px 163px;
-    flex-wrap: wrap;
-}
-
 .navbar-title {
     margin-bottom: 8px; /* Adds spacing between title and images */
 }
@@ -140,7 +129,14 @@ p{
     justify-content: center;
 }
 
-
+.buttons-image{
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 50vh;            /* Ensure the parent has height */
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .icon-buttons-section{
     justify-content: space-between;
@@ -156,7 +152,7 @@ p{
 .icons-List {
     display: flex;
     width: 1440px;
-    padding: 0px 200px;
+    padding: 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -168,25 +164,26 @@ p{
 /* Ensures icons are in one line, centered, and spaced evenly */
 .icons-grid {
     display: flex;
-    justify-content: center; /* Centers the icons */
     align-items: center;
     gap: 24px; /* Reduced spacing between icons */
     width: 80%; /* Adjust width as needed */
     max-width: 1440px; /* Prevents icons from spreading too far */
     flex-wrap: nowrap; /* Ensures everything stays in one row */
     overflow-x: auto; /* Prevents layout breaking if too many icons */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .icons-grid img {
     max-width: 70px; /* Slightly smaller icons */
     height: auto;
+
 }
 
 
 .icon-Buttons-Group{
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    padding-top: 80px;
+    padding-bottom: 80px
 }
 
 /* Center the section */
@@ -194,7 +191,7 @@ p{
     display: flex;
     justify-content: center; /* Centers the columns */
     align-items: flex-start; /* Aligns items at the top */
-    gap: 750px; /* Space between columns */
+    gap: 350px; /* Space between columns */
     width: 100%;
     max-width: 800px; /* Adjust width as needed */
     margin: 0 auto; /* Centering */
@@ -227,42 +224,23 @@ p{
     font-weight: 500; /* Text weight */
 }
 
+.status-icons-column {
+    display: flex;
+    justify-content: center; /* Centers the columns */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 350px; /* Space between columns */
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto; /* Centering */
+}
 
-
-
-
-/* Center the sign-up section */
-.sign-up {
+/* Style for each column */
+.status-icons-column1, 
+.status-icons-column2 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    gap: 16px; /* Space between buttons */
-    width: 100%;
-    height: 100vh; /* Full viewport height */
+    gap: 16px; /* Space between each button */
 }
-
-/* Style for each button */
-.sign-up div {
-    display: flex;
-    align-items: center; /* Aligns icon and text */
-    gap: 10px; /* Space between icon and text */
-    padding: 12px 20px;
-    background-color: #f4f4f4; /* Light background */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.2s ease-in-out;
-}
-
-/* Icon size */
-.sign-up img {
-    width: 24px;
-    height: 24px;
-}
-
-
 
 /* Container for both columns */
 .status-icons-column {
@@ -271,16 +249,8 @@ p{
     align-items: flex-start; /* Align columns to the top */
     gap: 40px; /* Space between the two columns */
     width: 100%;
-    margin-top: 20px;
-}
-
-/* Styles for each column */
-.status-icons-column1, 
-.status-icons-column2 {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically in each column */
-    gap: 12px; /* Space between rows in each column */
-    align-items: flex-start; /* Align items to the left */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Style for each icon row */
@@ -292,14 +262,6 @@ p{
     font-size: 16px;
     font-weight: 500;
 }
-
-/* Icon size */
-.status-icons-column img {
-    width: 24px;
-    height: 24px;
-}
-
-
 
 /* Container for the entire section */
 .character-container {
@@ -373,17 +335,11 @@ p{
 }
 
 
-
-
-
-
-
 .illustrations-img img {
     display: flex;
     justify-content: center;  /* Centers horizontally */
     align-items: center;      /* Centers vertically */
-    height: 100vh;            /* Ensure the parent has height */
+    height: 50vh;            /* Ensure the parent has height */
+    padding-left: 50px;
+    padding-right: 50px;
 }
-
-
-
